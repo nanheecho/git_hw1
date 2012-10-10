@@ -5,6 +5,17 @@
 <meta charset="utf-8"/>
 <title>과제1 - 자기 소개 페이지1</title>
 <style type = "text/css">
+	#navbar { width: 420px;height: 22px; background-color:  #F7FE40;}
+	#navbar ul li{float: left;}
+	#navbar ul li a{
+		color: #D60062; background-color:#5DCEC6;
+		display: block;
+		width: 120px;
+		text-align: center;
+	}
+	#navbar ul li a.selected{background-color:  #200772;}
+	#navbar ul li a:hover{background-color: #200772;}
+
 	body{background-image: url('./images/b.jpg');}
 	a:link, a:visited {
  				 background-color:#5DCEC6;
@@ -14,22 +25,34 @@
 				 background-color: #200772;
  				}
  	#content{overflow:auto;}
- 	#main_content{width: 300px; float: left; padding: 10px; }
- 	#sub_content{width: 450px; float:center; background-color: #F7FE40;}
+ 	#header{float: left;}
+ 	#main_content{width: 450px;  float: center; background-color: #F7FE40; }
+ 	#sub_content{ float: right;}
 	</style>
 </head>
 <body>
+	<div id="navbar">
+		<ul>
+			
+			<li><a href=".\index1.html">간단한 자기소개</a></li>
+			<li><a href=".\index2.html">난희의  일대기 </a></li>
+			<li><a href=".\index3.html">설문조사 </a></li>
+		</ul>
+	</div>
+
 <div id="wrap">
 		<div id="top">
 	<h1 style ="text-align:center">who are you ?</h1> <br>
 		</div>
 		<div id="line"></div>
-	<div id="content">
-		<div id="main_content">
+	<div id="header">
+		<div id="header_left">
 			<br><img src=".\images\스마일.gif" alt="스마일"/>
 		<span style = "color:brown"><span style="font-size:35pt">I'm  난희 <br></span></span>
 		</div>
-	<div id="sub_content">
+	</div>
+	<div id="content">
+		<div id="main_content">
 	<ul>
 	<li><span style = "color:green">출생: 1993년 2월 7일</span>  <br></li>
 	<li>별자리: 물병자리</li>
@@ -50,19 +73,11 @@
 		facebook </a> </li>
 	</ul>
 </div>
+<div id="sub_content">
+	<img src=".\images\jn.png" alt="jn" />
 </div>
-<div id="footer">
-	<a href=".\index2.html"> ※난희의 일대기 보러가기 </a>
-	<br>
-	<a href=".\index3.html"> ※설문조사 하기</a>
-	</div>
-<br><br><br><br><br><br><br>
-	<p style ="text-align:center">
-	
-	다음페이지<i>(화살표클릭)</i>
-	<a href=".\index2.html"> 
-	<img src=".\images\1.gif" 
-	alt="화살표"/></a></p>
+</div>
+
 </div>
 </body>
 </html>
